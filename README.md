@@ -11,7 +11,7 @@ Class ini merepresentasikan sebuah produk di petshop dengan atribut sebagai beri
 - namaProduk (Private)
 - kategori (Private)
 - harga (Private)
-- Class "Petshop" juga terdiri dari beberapa method:
+  Class "Petshop" juga terdiri dari beberapa method:
 
 - Constructor: Menginisialisasi atribut dengan nilai default kosong atau nol.
 - setData: Mengubah nilai atribut dari objek (ID, namaProduk, kategori, harga).
