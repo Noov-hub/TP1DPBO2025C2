@@ -1,6 +1,8 @@
-from Petshop import Petshop
+from Petshop import Petshop  # Mengimpor kelas Petshop dari file Petshop.py
 
-data_petshop = []
+data_petshop = []  # List untuk menyimpan data produk petshop
+
+# Fungsi untuk menampilkan semua data produk
 
 def show_data():
     if not data_petshop:
@@ -12,16 +14,20 @@ def show_data():
             print(f"{key} : {value}")
         print("+----------------------------------+")
 
+# Fungsi untuk menambahkan data produk baru
+
 def add_data():
     ID = input("ID: ")
-    if any(pet.ID == ID for pet in data_petshop):
+    if any(pet.ID == ID for pet in data_petshop):  # Cek apakah ID sudah digunakan
         print("ID sudah digunakan!")
         return
     namaProduk = input("Nama: ")
     kategori = input("Kategori: ")
     harga = int(input("Harga: "))
-    data_petshop.append(Petshop(ID, namaProduk, kategori, harga))
+    data_petshop.append(Petshop(ID, namaProduk, kategori, harga))  # Tambah objek Petshop ke list
     print("Data berhasil ditambahkan!")
+
+# Fungsi untuk mengubah data produk berdasarkan ID
 
 def change_data():
     ID = input("Masukkan ID data yang ingin diubah: ")
@@ -34,11 +40,15 @@ def change_data():
             return
     print(f"Produk dengan ID {ID} tidak ditemukan!")
 
+# Fungsi untuk menghapus data produk berdasarkan ID
+
 def delete_data():
     ID = input("Masukkan ID data yang ingin dihapus: ")
     global data_petshop
-    data_petshop = [pet for pet in data_petshop if pet.ID != ID]
+    data_petshop = [pet for pet in data_petshop if pet.ID != ID]  # Filter list untuk menghapus produk
     print("Data berhasil dihapus!")
+
+# Fungsi untuk mencari data produk berdasarkan ID
 
 def search_data():
     ID = input("Masukkan ID data yang ingin dicari: ")
@@ -50,6 +60,8 @@ def search_data():
             print("+----------------------------------+")
             return
     print(f"Produk dengan ID {ID} tidak ditemukan!")
+
+# Fungsi utama untuk menjalankan program
 
 def main():
     print("Welcome To Noov Petshop")
@@ -72,5 +84,6 @@ def main():
         else:
             print("Pilihan tidak valid!")
 
+# Menjalankan program jika file ini dieksekusi secara langsung
 if __name__ == "__main__":
     main()
