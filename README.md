@@ -7,16 +7,16 @@ Program terdiri dari satu class, yaitu "Petshop"dengan desain sebagai berikut:
 1. Class "Petshop"
 Class ini merepresentasikan sebuah produk di petshop dengan atribut sebagai berikut:
 
-ID (Private)
-namaProduk (Private)
-kategori (Private)
-harga (Private)
-Class "Petshop" juga terdiri dari beberapa method:
+- ID (Private)
+- namaProduk (Private)
+- kategori (Private)
+- harga (Private)
+- Class "Petshop" juga terdiri dari beberapa method:
 
-Constructor: Menginisialisasi atribut dengan nilai default kosong atau nol.
-setData: Mengubah nilai atribut dari objek (ID, namaProduk, kategori, harga).
-reset: Mengembalikan nilai atribut ke default (kosong atau nol).
-Getter Methods: (getID(), getNamaProduk(), getKategori(), getHarga()) untuk mengambil nilai atribut.
+- Constructor: Menginisialisasi atribut dengan nilai default kosong atau nol.
+- setData: Mengubah nilai atribut dari objek (ID, namaProduk, kategori, harga).
+- reset: Mengembalikan nilai atribut ke default (kosong atau nol).
+- Getter Methods: (getID(), getNamaProduk(), getKategori(), getHarga()) untuk mengambil nilai atribut.
 
 # Alur
 
@@ -28,12 +28,12 @@ Getter Methods: (getID(), getNamaProduk(), getKategori(), getHarga()) untuk meng
 2. Menampilkan Menu dan Interaksi Pengguna
   Pada Java (Console-Based), Python (Console-Based), dan PHP (Web-Based), program menampilkan menu dengan pilihan:
 
-  1 | Show
-  2 | Add
-  3 | Change
-  4 | Delete
-  5 | Search
-  0 | Exit
+  - 1 | Show
+  - 2 | Add
+  - 3 | Change
+  - 4 | Delete
+  - 5 | Search
+  - 0 | Exit
   
   Java & Python: Menggunakan scanner/input untuk menerima pilihan dari pengguna.
   PHP: Menggunakan form HTML dan button submit untuk menangani input pengguna.
